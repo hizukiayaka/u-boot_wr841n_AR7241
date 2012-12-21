@@ -1,0 +1,91 @@
+skge.o: skge.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+skaddr.o: skaddr.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+skgehwt.o: skgehwt.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+skgeinit.o: skgeinit.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+skgepnmi.o: skgepnmi.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+skgesirq.o: skgesirq.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+ski2c.o: ski2c.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+sklm80.o: sklm80.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+skqueue.o: skqueue.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+skrlmt.o: skrlmt.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+sktimer.o: sktimer.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+skvpd.o: skvpd.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+skxmac2.o: skxmac2.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+skcsum.o: skcsum.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+uboot_skb.o: uboot_skb.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+uboot_drv.o: uboot_drv.c /Openwrt/u-boot-1.3.0/include/common.h \
+  /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h \
+  /Openwrt/u-boot-1.3.0/include/linux/bitops.h \
+  /Openwrt/u-boot-1.3.0/include/asm/bitops.h \
+  /Openwrt/u-boot-1.3.0/include/linux/types.h \
+  /Openwrt/u-boot-1.3.0/include/linux/config.h \
+  /Openwrt/u-boot-1.3.0/include/linux/posix_types.h \
+  /Openwrt/u-boot-1.3.0/include/linux/stddef.h \
+  /Openwrt/u-boot-1.3.0/include/asm/posix_types.h \
+  /Openwrt/u-boot-1.3.0/include/asm/types.h \
+  /Openwrt/u-boot-1.3.0/include/asm/byteorder.h \
+  /Openwrt/u-boot-1.3.0/include/linux/byteorder/big_endian.h \
+  /Openwrt/u-boot-1.3.0/include/linux/byteorder/swab.h \
+  /Openwrt/u-boot-1.3.0/include/linux/byteorder/generic.h \
+  /Openwrt/u-boot-1.3.0/include/asm/sgidefs.h \
+  /Openwrt/u-boot-1.3.0/include/asm/system.h \
+  /Openwrt/u-boot-1.3.0/include/asm/ptrace.h \
+  /Openwrt/u-boot-1.3.0/include/asm/isadep.h \
+  /Openwrt/u-boot-1.3.0/include/linux/string.h \
+  /Openwrt/u-boot-1.3.0/include/asm/string.h \
+  /Openwrt/tlc/bin/../lib/gcc/mips-linux-uclibc/3.4.4/include/stdarg.h \
+  /Openwrt/u-boot-1.3.0/include/part.h \
+  /Openwrt/u-boot-1.3.0/include/ide.h \
+  /Openwrt/u-boot-1.3.0/include/flash.h \
+  /Openwrt/u-boot-1.3.0/include/image.h \
+  /Openwrt/u-boot-1.3.0/include/asm/u-boot.h \
+  /Openwrt/u-boot-1.3.0/include/asm/global_data.h \
+  /Openwrt/u-boot-1.3.0/include/asm/regdef.h

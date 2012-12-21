@@ -1,0 +1,85 @@
+jffs2_1pass.o: jffs2_1pass.c /Openwrt/u-boot-1.3.0/include/common.h \
+  /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h \
+  /Openwrt/u-boot-1.3.0/include/linux/bitops.h \
+  /Openwrt/u-boot-1.3.0/include/asm/bitops.h \
+  /Openwrt/u-boot-1.3.0/include/linux/types.h \
+  /Openwrt/u-boot-1.3.0/include/linux/config.h \
+  /Openwrt/u-boot-1.3.0/include/linux/posix_types.h \
+  /Openwrt/u-boot-1.3.0/include/linux/stddef.h \
+  /Openwrt/u-boot-1.3.0/include/asm/posix_types.h \
+  /Openwrt/u-boot-1.3.0/include/asm/types.h \
+  /Openwrt/u-boot-1.3.0/include/asm/byteorder.h \
+  /Openwrt/u-boot-1.3.0/include/linux/byteorder/big_endian.h \
+  /Openwrt/u-boot-1.3.0/include/linux/byteorder/swab.h \
+  /Openwrt/u-boot-1.3.0/include/linux/byteorder/generic.h \
+  /Openwrt/u-boot-1.3.0/include/asm/sgidefs.h \
+  /Openwrt/u-boot-1.3.0/include/asm/system.h \
+  /Openwrt/u-boot-1.3.0/include/asm/ptrace.h \
+  /Openwrt/u-boot-1.3.0/include/asm/isadep.h \
+  /Openwrt/u-boot-1.3.0/include/linux/string.h \
+  /Openwrt/u-boot-1.3.0/include/asm/string.h \
+  /Openwrt/tlc/bin/../lib/gcc/mips-linux-uclibc/3.4.4/include/stdarg.h \
+  /Openwrt/u-boot-1.3.0/include/part.h \
+  /Openwrt/u-boot-1.3.0/include/ide.h \
+  /Openwrt/u-boot-1.3.0/include/flash.h \
+  /Openwrt/u-boot-1.3.0/include/image.h \
+  /Openwrt/u-boot-1.3.0/include/asm/u-boot.h \
+  /Openwrt/u-boot-1.3.0/include/asm/global_data.h \
+  /Openwrt/u-boot-1.3.0/include/asm/regdef.h \
+  /Openwrt/u-boot-1.3.0/include/malloc.h \
+  /Openwrt/u-boot-1.3.0/include/linux/stat.h \
+  /Openwrt/u-boot-1.3.0/include/linux/time.h
+compr_rtime.o: compr_rtime.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+compr_rubin.o: compr_rubin.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+compr_zlib.o: compr_zlib.c /Openwrt/u-boot-1.3.0/include/common.h \
+  /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h \
+  /Openwrt/u-boot-1.3.0/include/linux/bitops.h \
+  /Openwrt/u-boot-1.3.0/include/asm/bitops.h \
+  /Openwrt/u-boot-1.3.0/include/linux/types.h \
+  /Openwrt/u-boot-1.3.0/include/linux/config.h \
+  /Openwrt/u-boot-1.3.0/include/linux/posix_types.h \
+  /Openwrt/u-boot-1.3.0/include/linux/stddef.h \
+  /Openwrt/u-boot-1.3.0/include/asm/posix_types.h \
+  /Openwrt/u-boot-1.3.0/include/asm/types.h \
+  /Openwrt/u-boot-1.3.0/include/asm/byteorder.h \
+  /Openwrt/u-boot-1.3.0/include/linux/byteorder/big_endian.h \
+  /Openwrt/u-boot-1.3.0/include/linux/byteorder/swab.h \
+  /Openwrt/u-boot-1.3.0/include/linux/byteorder/generic.h \
+  /Openwrt/u-boot-1.3.0/include/asm/sgidefs.h \
+  /Openwrt/u-boot-1.3.0/include/asm/system.h \
+  /Openwrt/u-boot-1.3.0/include/asm/ptrace.h \
+  /Openwrt/u-boot-1.3.0/include/asm/isadep.h \
+  /Openwrt/u-boot-1.3.0/include/linux/string.h \
+  /Openwrt/u-boot-1.3.0/include/asm/string.h \
+  /Openwrt/tlc/bin/../lib/gcc/mips-linux-uclibc/3.4.4/include/stdarg.h \
+  /Openwrt/u-boot-1.3.0/include/part.h \
+  /Openwrt/u-boot-1.3.0/include/ide.h \
+  /Openwrt/u-boot-1.3.0/include/flash.h \
+  /Openwrt/u-boot-1.3.0/include/image.h \
+  /Openwrt/u-boot-1.3.0/include/asm/u-boot.h \
+  /Openwrt/u-boot-1.3.0/include/asm/global_data.h \
+  /Openwrt/u-boot-1.3.0/include/asm/regdef.h
+mini_inflate.o: mini_inflate.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+compr_lzo.o: compr_lzo.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h
+compr_lzari.o: compr_lzari.c /Openwrt/u-boot-1.3.0/include/config.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ap99.h \
+  /Openwrt/u-boot-1.3.0/include/configs/ar7240.h \
+  /Openwrt/u-boot-1.3.0/include/config_cmd_default.h

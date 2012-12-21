@@ -1,0 +1,113 @@
+#!/bin/sh
+
+: ${JOBS:=}
+
+if [ "${CROSS_COMPILE}" ] ; then
+	MAKE="make CROSS_COMPILE=${CROSS_COMPILE}"
+else
+	MAKE=make
+fi
+
+if [ "${MAKEALL_LOGDIR}" ] ; then
+	LOG_DIR=${MAKEALL_LOGDIR}
+else
+	LOG_DIR="LOG"
+fi
+
+if [ ! "${BUILD_DIR}" ] ; then
+	BUILD_DIR="."
+fi
+
+[ -d ${LOG_DIR} ] || mkdir ${LOG_DIR} || exit 1
+
+LIST=""
+
+#########################################################################
+## MIPS Systems		(default = big endian)
+#########################################################################
+
+LIST_mips4kc="		\
+	incaip		\
+"
+
+LIST_mips5kc="		\
+	purple		\
+"
+
+LIST_au1xx0="		\
+	dbau1000	\
+	dbau1100	\
+	dbau1500	\
+	dbau1550	\
+	dbau1550_el	\
+	gth2		\
+"
+
+LIST_mips="		\
+	${LIST_mips4kc}	\
+	${LIST_mips5kc}	\
+	${LIST_au1xx0}	\
+"
+
+#########################################################################
+## MIPS Systems		(little endian)
+#########################################################################
+
+LIST_mips4kc_el=""
+
+LIST_mips5kc_el=""
+
+LIST_au1xx0_el="	\
+	dbau1550_el	\
+	pb1000		\
+"
+
+LIST_mips_el="			\
+	${LIST_mips4kc_el}	\
+	${LIST_mips5kc_el}	\
+	${LIST_au1xx0_el}	\
+"
+#-----------------------------------------------------------------------
+
+#----- for now, just run PPC by default -----
+[ $# = 0 ] && set $LIST_ppc
+
+#-----------------------------------------------------------------------
+
+build_target() {
+	target=$1
+
+	${MAKE} distclean >/dev/null
+	${MAKE} ${target}_config
+
+	${MAKE} ${JOBS} all 2>&1 >${LOG_DIR}/$target.MAKELOG \
+				| tee ${LOG_DIR}/$target.ERR
+
+	${CROSS_COMPILE:-ppc_8xx-}size ${BUILD_DIR}/u-boot \
+				| tee -a ${LOG_DIR}/$target.MAKELOG
+}
+
+#-----------------------------------------------------------------------
+
+
+for arg in $@
+do
+	case "$arg" in
+	arm|SA|ARM7|ARM9|ARM10|ARM11|ixp|pxa| \
+	avr32| \
+	blackfin| \
+	coldfire| \
+	microblaze| \
+	mips|mips_el| \
+	nios|nios2| \
+	ppc|5xx|5xxx|512x|8xx|8220|824x|8260|83xx|85xx|86xx|4xx|7xx|74xx| \
+	x86|I486|TSEC)
+			for target in `eval echo '$LIST_'${arg}`
+			do
+				build_target ${target}
+			done
+			;;
+	*)		build_target ${arg}
+			;;
+	esac
+done
